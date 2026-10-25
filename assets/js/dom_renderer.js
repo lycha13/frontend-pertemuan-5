@@ -1,6 +1,3 @@
-// Integrasi Materi 4 & 5: CRUD, pencarian, product card, dan pengujian Console.
-// Data disimpan di localStorage agar dapat digunakan oleh kedua halaman.
-
 const STORAGE_KEY = "productCatalog";
 const KATEGORI_PRODUK = [
     "Laptop & Komputer",
@@ -181,8 +178,6 @@ function handleDeleteProduct(productId) {
 }
 
 function tambahProdukConsole(name, category, price, stock) {
-    // Bisa dipanggil dari Console:
-    // tambahProdukConsole("Mouse Wireless", "Periferal & Aksesoris", 150000, 10)
     if (arguments.length === 0) {
         name = prompt("Name produk:");
         if (name === null) return;
