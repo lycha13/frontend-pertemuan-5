@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk - Card</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <nav>
+            <a href="index_1.html">Tambah / Edit Produk</a>
+            <a href="produk-card.html" class="active">Daftar Produk (Card & Console)</a>
+        </nav>
+
+        <header class="page-header">
+            <h1>Katalog Produk Elektronik</h1>
+            <p>Daftar card memakai data yang sama dengan halaman pengelolaan produk.</p>
+        </header>
+
+        <section class="data-section">
+            <div class="section-heading">
+                <h2>Daftar Produk</h2>
+                <input type="search" id="search-input" placeholder="Cari nama atau kategori produk...">
+            </div>
+            <div id="product-container" class="card-grid"></div>
+        </section>
+
+        <section class="console-help">
+            <h2>Pengujian melalui Console</h2>
+            <p>Buka Inspect → Console, lalu jalankan contoh berikut untuk menambahkan produk ke daftar bersama:</p>
+            <pre><code>tambahProdukConsole("Mouse Wireless", "Periferal &amp; Aksesoris", 150000, 10)</code></pre>
+            <p>Untuk melihat seluruh data:</p>
+            <pre><code>console.table(localProductList)</code></pre>
+            <p>Data disimpan di localStorage sehingga tetap tersedia saat berpindah halaman pada origin yang sama.</p>
+        </section>
+    </main>
+    <script src="assets/js/dom_renderer.js"></script>
+</body>
+</html>
